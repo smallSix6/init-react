@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src"
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx src"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +48,7 @@
     "eslint": "^7.2.0",
     "eslint-plugin-react": "^7.20.0",
     "husky": "^4.2.5",
+    "lint-staged": "^10.2.9",
     "ts-loader": "^7.0.5"
   },
   "husky": {
@@ -56,10 +57,10 @@
     }
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix --ext .js*,.ts*",
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix --ext .ts*",
       "prettier --write",
-      "git add ."
+      "git add"
     ]
   }
 }
