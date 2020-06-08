@@ -1,8 +1,5 @@
 {
   "compilerOptions": {
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
     "allowSyntheticDefaultImports": true,
     "noUnusedParameters": true,
     "outDir": "build/dist",
@@ -42,9 +39,6 @@
       ]
     }
   },
-  "include": [
-    "src"
-  ],
   "exclude": [
     "node_modules",
     "build",
@@ -54,6 +48,7 @@
     "jest",
     "src/setupTests.ts",
     "tslint:latest",
-    "tslint-config-prettier"
+    "tslint-config-prettier",
+    "config"
   ]
 }
