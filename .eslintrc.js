@@ -94,13 +94,6 @@ module.exports = {
         'no-new-func': 1, // 禁止使用new Function
         'no-new-object': 2, // 禁止使用new Object()
         'no-self-compare': 2, // 不能比较自身
-        'no-unused-vars': [
-            2,
-            {
-                vars: 'all',
-                args: 'after-used',
-            },
-        ], // 不能有声明后未被使用的变量或参数
         'no-use-before-define': 0, // 未定义前不能使用
         'valid-typeof': 2, // 无效的类型判断
         'wrap-iife': [2, 'inside'], // 立即执行函数表达式的小括号风格
@@ -176,5 +169,6 @@ module.exports = {
         'react/display-name': 0, // 一个莫名其妙的Bug
         'react/no-find-dom-node': 0,
         '@typescript-eslint/no-non-null-assertion': 0, // 允许用！断言不为空
+        'no-unused-vars': 2 // 关闭定义变量未使用提示/报错
     },
 }

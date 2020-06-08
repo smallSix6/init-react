@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css'
-const a = 5
 
 function App(): any {
     return (
