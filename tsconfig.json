@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedParameters": true,
+    "outDir": "build/dist",
+    "baseUrl": ".",
+    "strict": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": true,
+    "experimentalDecorators": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "importHelpers": true,
+    "noImplicitThis": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "skipLibCheck": true,
+    "noResolve": false,
+    "module": "es2015",
+    "allowJs": true,
+    "target": "es5",
+    "jsx": "react",
+    "lib": [
+      "es5",
+      "es2015",
+      "dom",
+      "es7",
+      "es2018"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "tslint:latest",
+    "tslint-config-prettier"
+  ]
+}
