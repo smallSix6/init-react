@@ -2,7 +2,6 @@ import React from 'react'
 import './App.css'
 const a = 5
 
-console.log(sdfsfdsfssssasaswsss)
 function App(): any {
     return (
         <div className="App">
