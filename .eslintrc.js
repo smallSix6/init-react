@@ -169,6 +169,7 @@ module.exports = {
         'react/display-name': 0, // 一个莫名其妙的Bug
         'react/no-find-dom-node': 0,
         '@typescript-eslint/no-non-null-assertion': 0, // 允许用！断言不为空
-        'no-unused-vars': 2 // 关闭定义变量未使用提示/报错
+        'no-unused-vars': 2, // 关闭定义变量未使用提示/报错
+        'no-console': 2, // 禁止使用console
     },
 }
