@@ -40,6 +40,7 @@ module.exports = {
         eqeqeq: 2, // 必须使用全等
         yoda: [2, 'never'], // 禁止尤达条件
         strict: [2, 'never'], // 禁用严格模式，禁止在任何地方出现 'use strict'
+        "@typescript-eslint/rule-name": 0,
         'no-extra-boolean-cast': 2, // 禁止不必要的bool转换
         'no-lone-blocks': 2, // 禁止不必要的嵌套块
         'no-plusplus': 0, // 禁止使用++，--
@@ -93,7 +94,6 @@ module.exports = {
         'no-mixed-spaces-and-tabs': [2, false], // 禁止混用tab和空格
         'no-new-func': 1, // 禁止使用new Function
         'no-new-object': 2, // 禁止使用new Object()
-        'no-self-compare': 2, // 不能比较自身
         'no-use-before-define': 0, // 未定义前不能使用
         'valid-typeof': 2, // 无效的类型判断
         'wrap-iife': [2, 'inside'], // 立即执行函数表达式的小括号风格
@@ -150,7 +150,6 @@ module.exports = {
         ], // 禁止扩展原生对象
         'no-extra-parens': [2, 'functions'], // 禁止额外的括号，仅针对函数体
         'no-floating-decimal': 2, // 不允许使用 2. 或 .5 来表示数字，需要用 2、2.0、0.5 的格式
-        'no-func-assign': 2, // 禁止对函数声明重新赋值
         'no-implied-eval': 2, // 禁止在 setTimeout 和 setInterval 中传入字符串，因会触发隐式 eval
         'no-multi-assign': 2, // 禁止连等赋值
         '@typescript-eslint/explicit-function-return-type': [

@@ -22,10 +22,14 @@
     "suppressImplicitAnyIndexErrors": false,
     "skipLibCheck": true,
     "noResolve": false,
-    "module": "es2015",
+    "module": "esnext",
     "allowJs": true,
     "target": "es5",
-    "jsx": "react",
+    "jsx": "preserve",
+    "types": [
+      "react",
+      "react-dom"
+    ],
     "lib": [
       "es5",
       "es2015",
@@ -33,14 +37,12 @@
       "es7",
       "es2018"
     ],
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "exclude": [
-    "node_modules",
+    "./node_modules/**/*",
     "build",
     "scripts",
     "acceptance-tests",
@@ -50,5 +52,8 @@
     "tslint:latest",
     "tslint-config-prettier",
     "config"
+  ],
+  "include": [
+    "src"
   ]
 }
